@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            overflow: hidden;
+            background-color: #333;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            padding: 16px;
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            background-color: lightblue;
+        }
+        
+        .header{
+            background-color: lightblue;
+            grid-area: header;
+        }
+        .section1{
+            background-color: lightgreen;
+            grid-area: section1;
+        }
+        .section2{
+            background-color: lightcoral;
+            grid-area: section2
+        }
+        .section3{
+            background-color: gold;
+            grid-area: section3;
+        }
+        .footer{
+            background-color: orange;
+            grid-area: footer;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'section1 section2 section3'
+            'footer footer footer';
+        }
+        .gridcontainer > div{
+            padding: 200px  0px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href = "index.html">Index</a></li>
+        <li><a href = "grid.html">Grid</a></li>
+        <li><a href = "float.html">Float</a></li>
+        <li><a href = "flexbox.html">Flexbox</a></li>
+        <li><a href = "navbar.html">Navbar</a></li>
+    </ul>
+
+    <div class = "gridcontainer">
+        <div class = "header">
+
+        </div>
+        <div class = "section1">
+
+        </div>
+        <div class = "section2"></div>
+        <div class = "section3"></div>
+        <div class = "footer"></div>
+    </div>
+</body>
+</html>

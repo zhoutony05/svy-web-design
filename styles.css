@@ -1,0 +1,67 @@
+h1{
+    color: red;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    color: blue;
+    font-size: 300px;
+}
+div{
+    background-color: lightblue;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    padding: 50px;
+
+}
+h3{
+    color: green;
+}
+h4{
+    color: pink;
+}
+
+img{
+    height: 30%;
+    width: 30%;
+}
+
+.small{
+    font-size: 8px;
+}
+
+.blueclass{
+    color: blue;
+}
+
+.big{
+    width: 800px;
+    height: 800px;
+    background-color: gold;
+}
+.tiny{
+    width: 100px;
+    height: 100px;
+    background-color:deepskyblue;
+}
+
+ul{
+    overflow: hidden;
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+}
+li a{
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    background-color: lightblue;
+}

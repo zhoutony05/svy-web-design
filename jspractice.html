@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "sum">Sum of Two Numbers</div>
+    <div id = "difference">Difference of Two Numbers</div>
+    <img id = "image" src = "cat.jpg">
+    <br>
+    <button id = "eventdemo">Change Image</button>
+    
+    <script>
+        const x = 5;
+        const y = 3;
+
+        const a = 4;
+        const b = 1;
+
+        let sum = x + y;
+        let diff = x - y;
+        function sumNumbers(x, y){
+            return x + y;
+        }
+        sumNumbers(a, y);
+        function subtractNum(x, y){
+            return x - y;
+        }
+        subtractNum(y, a);
+
+        function multiplyNum(x, y){
+            return x*y;
+        }
+        multiplyNum(2, 4);
+
+        function divideNum(a, b){
+            return a/b;
+        }
+        divideNum(4, 1);
+
+        const images = ["cat.jpg", "dog.jpg", "bird.jpg"]
+        const image = document.getElementById("image");
+        var counter = 0;
+        function changeImage(){
+            if(counter%3 == 0){
+                image.src = images[0];
+                counter++;
+            }
+            else if (counter%3 == 1){
+                image.src = images[1];
+                counter++;
+            }
+            else if (counter%3 == 2){
+                image.src = images[2];
+                counter++;
+            }
+            
+        }
+        
+
+        document.getElementById("sum").innerHTML = sumNumbers(x, y);
+        document.getElementById("difference").innerHTML = subtractNum(a, b);
+        document.getElementById("eventdemo").addEventListener("click", changeImage);
+       
+    </script>
+</body>
+</html>

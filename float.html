@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My first HTML page</title>
+        <style>
+            ul{
+                overflow: hidden;
+                background-color: #333;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                padding: 16px;
+                display: block;
+                text-decoration: none;
+                color: white;
+            }
+            li a:hover{
+                background-color: lightblue;
+            }
+            .box{
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin: 10px;
+                float: left;
+                width: 30%;
+            }
+            img{
+                width: 40%;
+                height: 500px;
+            }
+            .text{
+                float: right;
+                margin-right: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href = "index.html">Index</a></li>
+            <li><a href = "grid.html">Grid</a></li>
+            <li><a href = "float.html">Float</a></li>
+            <li><a href = "flexbox.html">Flexbox</a></li>
+            <li><a href = "navbar.html">Navbar</a></li>
+        </ul>
+        <section>
+            <div class = "box" style = "background-color: #bbb;">This is Div 1</div>
+            <div class = "box" style = "background-color: #ccc;">This is Div 2</div>
+            <div class = "box" style = "background-color: #ddd;">This is Div 3</div>
+        </section>
+
+        <img src = "dog.jpg">
+        <div class = "text">This is a dog. alskdj   flkajsldkfalksdfjla   kdfjlakfjasldkfjald   fkjadlfkajldkfj   ldkfj</div>
+    </body>
+</html>
